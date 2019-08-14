@@ -28,12 +28,13 @@ cinst FiraCode
 # cinst winrrar
 
 # # Clouds
-cinst dropbox
+#cinst dropbox
 # cinst google-backup-and-sync
 
 
 #--- Setting up Windows ---
-executeScript "config-git.ps1";
+executeScript "chrome-config.ps1"
+executeScript "git-config.ps1"
 
 Enable-UAC
 Enable-RemoteDesktop
