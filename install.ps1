@@ -1,4 +1,4 @@
-# START http://boxstarter.org/package/nr/url?https://drive.google.com/open?id=1En9hN-Xr600LhNJsTepclq-d-ErQTFDq
+# START http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/contralorogo/boxstarter/master/install.ps1cls
 choco feature enable -n allowGlobalConfirmation
 Disable-UAC
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
@@ -28,8 +28,12 @@ cinst FiraCode
 # cinst winrrar
 
 # # Clouds
-# cinst dropbox
+cinst dropbox
 # cinst google-backup-and-sync
+
+
+#--- Setting up Windows ---
+executeScript "config-git.ps1";
 
 Enable-UAC
 Enable-RemoteDesktop
